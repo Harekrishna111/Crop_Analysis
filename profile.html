@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Profile</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #e8f5e4;
+        }
+
+        /* Navbar */
+        .navbar {
+            width: 100%;
+            background-color: #6a994e;
+            padding: 12px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            color: white;
+        }
+
+        .navbar .left {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .navbar img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .profile-info {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            font-size: 15px;
+        }
+
+        .profile-info span {
+           background: #a7c957;
+    padding: 6px 12px;
+    border-radius: 20px;
+    color: #1b3a24;
+    font-weight: bold;
+    position: relative;
+    right: 30px;
+        }
+
+        /* Page Container */
+        .container {
+            width: 85%;
+            margin: 20px auto;
+        }
+
+        h2 {
+            color: #386641;
+            margin-bottom: 8px;
+        }
+
+        .section-box {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 12px;
+            border: 3px solid #6a994e;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .section-box input, .section-box textarea, .section-box select {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 2px solid #a7c957;
+            border-radius: 6px;
+            font-size: 15px;
+        }
+
+        .upload-box {
+            border: 2px dashed #6a994e;
+            padding: 15px;
+            text-align: center;
+            border-radius: 10px;
+            cursor: pointer;
+            color: #386641;
+            font-weight: bold;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            background-color: #6a994e;
+            border: none;
+            color: white;
+            font-size: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #386641;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="left">
+            <img src="crop.jpg" alt="logo">
+            Profile
+        </div>
+
+        <div class="profile-info">
+            <span>📍 Ranchi, India</span>
+            <span>👨‍🌾 Harekrishna</span>
+        </div>
+    </div>
+
+    <!-- Profile Page Content -->
+    <div class="container">
+
+        <!-- Farming Info -->
+        <div class="section-box">
+            <h2>🌾 Farming Details</h2>
+            <input type="text" placeholder="Farm Land Size (in Acres)">
+            <select>
+                <option>Select Crop Type</option>
+                <option>Wheat</option>
+                <option>Rice</option>
+                <option>Maize</option>
+                <option>Vegetables</option>
+                <option>Fruits</option>
+            </select>
+            <textarea rows="3" placeholder="Describe your farming experience..."></textarea>
+        </div>
+
+        <!-- Terrace Farming -->
+        <div class="section-box">
+            <h2>🌱 Terrace Farming</h2>
+            <select>
+                <option>Do you have terrace farming?</option>
+                <option>Yes</option>
+                <option>No</option>
+            </select>
+            <input type="text" placeholder="Terrace Area (in sq ft)">
+            <textarea rows="3" placeholder="What do you grow on your terrace?"></textarea>
+        </div>
+
+        <!-- Upload Section -->
+        <div class="section-box">
+            <h2>📸 Upload Farm / Terrace Images</h2>
+            <div class="upload-box">
+                Click to Upload Images
+                <input type="file" multiple hidden>
+            </div>
+        </div>
+
+        <!-- Save Button -->
+        <button>Save Profile</button>
+    </div>
+
+</body>
+
+</html>
