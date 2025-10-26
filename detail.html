@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Analysis - Details</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #e8f5e4;
+        }
+
+        
+        .navbar {
+            width: 100%;
+            background-color: #6a994e;
+            padding: 12px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .navbar img {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            border: 2px solid white;
+        }
+
+        .container {
+            width: 85%;
+            margin: 20px auto;
+        }
+
+        h2 {
+            color: #386641;
+            margin-bottom: 8px;
+        }
+
+        .section-box {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 12px;
+            border: 3px solid #6a994e;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+        }
+
+        
+        .crop-box {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            border: 2px solid #6a994e;
+            border-radius: 12px;
+            padding: 20px;
+            background-color: #f7fff2;
+        }
+
+        .crop-column {
+            width: 48%;
+        }
+
+        .crop-column h4 {
+            color: #386641;
+            border-bottom: 2px solid #6a994e;
+            display: inline-block;
+            padding-bottom: 4px;
+            margin-bottom: 10px;
+        }
+
+        .crop-column ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .crop-column ul li {
+            padding: 6px 0;
+            font-weight: bold;
+            color: #1b3a24;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            background-color: #6a994e;
+            border: none;
+            color: white;
+            font-size: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #386641;
+        }
+    </style>
+</head>
+
+<body>
+
+    
+    <div class="navbar">
+        <img src="crop.jpg" alt="crop icon">
+        Crop Analysis
+    </div>
+
+
+    <div class="container">
+        <div class="section-box">
+            <h2>🌾 Crops Details</h2>
+            <div class="crop-box">
+                <div class="crop-column">
+                    <h4>Important Points</h4>
+                    <ul>
+                        <li>Type of Crop: Rabi Crop</li>
+                        <li>Uses: Food grain for making flour</li>
+                        <li>Climate Preferred: Cool and dry</li>
+                        <li>Soil Preferred: Loamy soil rich in humus</li>
+                    </ul>
+                </div>
+
+                <div class="crop-column">
+                    <h4>Parameters</h4>
+                    <ul>
+                        <li>Optimum Temperature: 10°C–25°C</li>
+                        <li>Rainfall: 75–100 cm annually</li>
+                        <li>Soil: Fertile, well-drained</li>
+                        <li>Suitable for your region → Point to be noted</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <button>Save</button>
+    </div>
+
+</body>
+
+</html>

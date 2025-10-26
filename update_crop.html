@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Analysis</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #e8f5e4;
+        }
+
+        
+        .navbar {
+            width: 100%;
+            background-color: #6a994e;
+            padding: 12px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .navbar img {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            border: 2px solid white;
+        }
+
+        .container {
+            width: 85%;
+            margin: 20px auto;
+        }
+
+        h2 {
+            color: #386641;
+            margin-bottom: 8px;
+        }
+
+        .section-box {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 12px;
+            border: 3px solid #6a994e;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .search-box {
+            margin-top: 10px;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 10px;
+            font-size: 15px;
+            border: 2px solid #6a994e;
+            border-radius: 8px;
+        }
+
+        .info-cards {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+
+        .card {
+            background: #f2ffe9;
+            width: 30%;
+            padding: 12px;
+            text-align: center;
+            border: 2px solid #a7c957;
+            border-radius: 10px;
+            font-weight: bold;
+            color: #1b3a24;
+        }
+
+        .crop-types {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+
+        .crop-type {
+            background: #d9f7be;
+            padding: 8px 14px;
+            border-radius: 15px;
+            border: 2px solid #6a994e;
+            font-weight: bold;
+            color: #1b3a24;
+            cursor: pointer;
+        }
+
+        .crop-gallery {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .crop-img-box {
+            width: 90px;
+            height: 90px;
+            background: white;
+            border: 2px solid #6a994e;
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .crop-img-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            background-color: #6a994e;
+            border: none;
+            color: white;
+            font-size: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #386641;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    
+    <div class="navbar">
+        <img src="crop.jpg" alt="crop icon">
+        Crop Analysis
+    </div>
+
+
+    <div class="container">
+
+    
+        <div class="section-box">
+            <h2>🌾 Farming</h2>
+
+            
+            <div class="search-box">
+                <input type="text" placeholder="🔍 Search crop... (e.g. Tomato, Wheat, Potato)">
+            </div>
+
+            <div class="info-cards">
+                <div class="card">☁️ Live Weather</div>
+                <div class="card">🌱 Soil Type</div>
+                <div class="card">📅 Current Month</div>
+            </div>
+
+            <h3 style="margin-top: 18px; color:#386641;">Crop Types You Grow</h3>
+            <div class="crop-types">
+                <div class="crop-type">Vegetables</div>
+                <div class="crop-type">Fruits</div>
+                <div class="crop-type">Cereals</div>
+                <div class="crop-type">Pulses</div>
+                <div class="crop-type">Spices</div>
+            </div>
+
+            <h3 style="margin-top: 18px; color:#386641;">Your Crop Images</h3>
+            <div class="crop-gallery">
+                <div class="crop-img-box"><img src="tomatoe.jpg" alt="Tomato"></div>
+                <div class="crop-img-box"><img src="potato.jpg" alt="Potato"></div>
+                <div class="crop-img-box"><img src="brinjal.jpg" alt="Brinjal"></div>
+                <div class="crop-img-box"><img src="mango.jpg" alt="mango"></div>
+                <div class="crop-img-box"><img src="apple.jpg" alt="apple"></div>
+                <div class="crop-img-box"><img src="lemon.jpg" alt="lemon"></div>
+                <div class="crop-img-box"><img src="rice.jpg" alt="rice"></div>
+                <div class="crop-img-box"><img src="wheat.jpg" alt="wheat"></div>
+                <div class="crop-img-box"><img src="millet.jpg" alt="millet"></div>
+                <div class="crop-img-box"><img src="lentils.jpg" alt="lentils"></div>
+                <div class="crop-img-box"><img src="BengalGram.jpg" alt="BengalGram"></div>
+                <div class="crop-img-box"><img src="turmeric.jpg" alt="turmeric"></div>
+                <div class="crop-img-box"><img src="cumin.jpg" alt="cumin"></div>
+                <div class="crop-img-box"><img src="bay_leaf.jpg" alt="bay_leaf"></div>
+            </div>
+        </div>
+
+        <button>Save</button>
+    </div>
+
+</body>
+</html>
